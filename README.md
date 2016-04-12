@@ -61,7 +61,7 @@ $ slc loopback:model
 ? Select model's base class PersistedModel
 ? Expose Category via the REST API? Yes
 ? Custom plural form (used to build REST URL): Categories
-? Common model or server only? server
+? Common model or server only? common
 Let's add some Category properties now.
 
 Enter an empty property name when done.
@@ -87,7 +87,7 @@ $ slc loopback:model
 ? Select model's base class PersistedModel
 ? Expose Product via the REST API? Yes
 ? Custom plural form (used to build REST URL): Products
-? Common model or server only? server
+? Common model or server only? common
 Let's add some Product properties now.
 
 Enter an empty property name when done.
