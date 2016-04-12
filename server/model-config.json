@@ -4,7 +4,8 @@
       "loopback/common/models",
       "loopback/server/models",
       "../common/models",
-      "./models"
+      "./models",
+      "./node_modules/loopback-component-passport/lib/models"
     ],
     "mixins": [
       "loopback/common/mixins",
@@ -13,12 +14,39 @@
       "./mixins"
     ]
   },
-  "Category": {
-    "dataSource": null,
+  "User": {
+    "dataSource": "mongodb_dev"
+  },
+  "AccessToken": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "UserCredential": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "UserIdentity": {
+    "dataSource": "mongodb_dev",
+    "public": false
+  },
+  "product": {
+    "dataSource": "mongodb_dev",
     "public": true
   },
-  "Product": {
-    "dataSource": null,
+  "category": {
+    "dataSource": "mongodb_dev",
     "public": true
   }
 }

@@ -1,9 +1,13 @@
 {
   "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb_dev": {
     "host": "127.0.0.1",
     "port": 27017,
     "database": "aps-01-dev",
-    "name": "db",
+    "name": "mongodb_dev",
     "connector": "mongodb"
   }
 }
