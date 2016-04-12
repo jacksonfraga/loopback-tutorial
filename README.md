@@ -118,3 +118,29 @@ Enter an empty property name when done.
 ? Property name: 
 ```
 > Note que categoryId o tipo é string, isso pois a persistência será com Mongo DB e ele utiliza hash como Id.
+
+
+
+## Relacionamento entre Models
+Para criar os relaciomentos entre Models, utilize o comando "slc loopback:relation"
+
+Na Model **Product**
+```
+$ slc loopback:relation
+? Select the model to create the relationship from: Product
+? Relation type: belongs to
+? Choose a model to create a relationship with: Category
+? Enter the property name for the relation: category
+? Optionally enter a custom foreign key: categoryId
+```
+
+Na Model **Category**
+```
+$ slc loopback:relation
+? Select the model to create the relationship from: Category
+? Relation type: has many
+? Choose a model to create a relationship with: Product
+? Enter the property name for the relation: products
+? Optionally enter a custom foreign key: categoryId
+? Require a through model? No
+```
